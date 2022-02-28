@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:v="urn:schemas-microsoft-com:vml"
+        xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+<head>
+    <title> </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .popUp {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.45);
+            display: flex;
+            z-index: 99;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .popUp img {
+            width: 300px;
+        }
+
+        .product {
+            min-height: 250px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.09);
+            border: solid 2px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .product .prdImg {
+            width: 190px;
+        }
+
+        .product .plat {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .playstation {
+            border-color: blue;
+        }
+
+        .xbox {
+            border-color: green;
+        }
+
+        .switch {
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+<div class="customCard">
+    <div class="row">
+        <div id="test1" style="margin-left: 25px;"></div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="popUp">
+                <div class="modal-body" id="data"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
+
